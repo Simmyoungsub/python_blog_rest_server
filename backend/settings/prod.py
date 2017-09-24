@@ -111,10 +111,10 @@ TEMPLATES = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = (
-   'rest_framework_social_oauth2.backends.DjangoOAuth2',
-   'django.contrib.auth.backends.ModelBackend',
-)
+# AUTHENTICATION_BACKENDS = (
+#    'rest_framework_social_oauth2.backends.DjangoOAuth2',
+#    'django.contrib.auth.backends.ModelBackend',
+# )
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
