@@ -53,8 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'oauth2_provider',
-    'social_django',
-    'rest_framework_social_oauth2',
+    #'social_django',
+    #'rest_framework_social_oauth2',
 ]
 
 REST_FRAMEWORK = {
@@ -125,7 +125,7 @@ ALLOWED_HOSTS = [
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    
+
 )
 
 # Database
