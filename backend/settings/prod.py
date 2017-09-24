@@ -120,9 +120,9 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 
 CORS_ORIGIN_ALLOW_ALL=True
 
-ALLOWED_HOSTS = [
-    '*'
-]
+# ALLOWED_HOSTS = [
+#     '*'
+# ]
 
 # CORS_ORIGIN_WHITELIST = (
 #     '*'
