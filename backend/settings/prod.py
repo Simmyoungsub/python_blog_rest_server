@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'blog',
     'rest_framework',
     'corsheaders',
-    'oauth2_provider',
+    # 'oauth2_provider',
     #'social_django',
     #'rest_framework_social_oauth2',
 ]
@@ -104,8 +104,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'social_django.context_processors.backends',
-                'social_django.context_processors.login_redirect',
+                # 'social_django.context_processors.backends',
+                # 'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -118,12 +118,11 @@ AUTHENTICATION_BACKENDS = (
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-CORS_ORIGIN_ALLOW_ALL=True
-
 ALLOWED_HOSTS = [
     '*'
 ]
 
+CORS_ORIGIN_ALLOW_ALL=True
 # CORS_ORIGIN_WHITELIST = (
 #     '*'
 # )
