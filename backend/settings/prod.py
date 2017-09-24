@@ -53,8 +53,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'oauth2_provider',
-    #'social_django',
-    #'rest_framework_social_oauth2',
+    'social_django',
+    'rest_framework_social_oauth2',
 ]
 
 REST_FRAMEWORK = {
@@ -69,8 +69,8 @@ REST_FRAMEWORK = {
     ],
 
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        #'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
-        #'rest_framework_social_oauth2.authentication.SocialAuthentication',
+        'oauth2_provider.contrib.rest_framework.OAuth2Authentication',
+        'rest_framework_social_oauth2.authentication.SocialAuthentication',
         # 'blog.util.UserService'
     ),
 }
@@ -104,27 +104,30 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                # 'social_django.context_processors.backends',
-                # 'social_django.context_processors.login_redirect',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
 ]
 
-# AUTHENTICATION_BACKENDS = (
-#    'rest_framework_social_oauth2.backends.DjangoOAuth2',
-#    'django.contrib.auth.backends.ModelBackend',
-# )
+AUTHENTICATION_BACKENDS = (
+   'rest_framework_social_oauth2.backends.DjangoOAuth2',
+   'django.contrib.auth.backends.ModelBackend',
+)
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
 ALLOWED_HOSTS = [
+    # 'http://192.168.0.151'
+    # '192.168.0.151'
     '*'
 ]
 
 CORS_ORIGIN_ALLOW_ALL=True
 # CORS_ORIGIN_WHITELIST = (
-#     '*'
+#     # 'http://192.168.0.151:4200'
+#     # '192.168.0.151:4200'
 # )
 
 # Database
