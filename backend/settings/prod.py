@@ -176,10 +176,3 @@ USE_TZ = False
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
-#for oauth2
-BLOG_AUTH_CLIENT_ID = 'dN9l1TAT7qh1WFjzmIb2gGqQJ1kJ98BEEXD6Cabv'
-BLOG_AUTH_CLIENT_SECRET = 'jALMt0NQCBHvT8ERZikPpGkXuipMvKwZygS0qHoF6WcqiEpjylU0e3HPU8U9VQv5opvFeMtSpluNKVWZwygz3S2p95KgPhUrsJUD0l2ZL2XBYXzh2yHVeIy3uO1kxS2U'
-BLOG_AUTH_GRANT_TYPE = 'password'
-BLOG_AUTH_GRANT_REFRESH_TOKEN = 'refresh_token'
-BASE_URL = 'http://192.168.0.151:8000/'
