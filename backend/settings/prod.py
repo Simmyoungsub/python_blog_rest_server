@@ -118,15 +118,15 @@ AUTHENTICATION_BACKENDS = (
 
 WSGI_APPLICATION = 'backend.wsgi.application'
 
-# CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL=True
 
 ALLOWED_HOSTS = [
     '*'
 ]
 
-CORS_ORIGIN_WHITELIST = (
-    '*'
-)
+# CORS_ORIGIN_WHITELIST = (
+#     '*'
+# )
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
