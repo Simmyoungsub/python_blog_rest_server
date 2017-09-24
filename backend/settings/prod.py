@@ -121,7 +121,8 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # CORS_ORIGIN_ALLOW_ALL=True
 
 ALLOWED_HOSTS = [
-    '*'
+    '*',
+    '192.168.0.151:4200'
 ]
 
 CORS_ORIGIN_WHITELIST = (
