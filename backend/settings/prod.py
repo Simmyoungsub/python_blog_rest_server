@@ -121,16 +121,11 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # CORS_ORIGIN_ALLOW_ALL=True
 
 ALLOWED_HOSTS = [
-    '192.168.0.151',
-    # 'http://192.168.0.151:4200',
-    # 'http://localhost:4200'
+    '*'
 ]
 
 CORS_ORIGIN_WHITELIST = (
-    'http://localhost:4200',
-    '192.168.0.151:4200',
-    # 'http://192.168.0.151:4200',
-
+    
 )
 
 # Database
