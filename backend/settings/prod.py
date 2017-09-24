@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'blog',
     'rest_framework',
     'corsheaders',
-    # 'oauth2_provider',
+    'oauth2_provider',
     #'social_django',
     #'rest_framework_social_oauth2',
 ]
